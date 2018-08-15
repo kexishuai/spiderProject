@@ -97,7 +97,7 @@ class FirstbloodprojectDownloaderMiddleware(object):
         # - return None: continue processing this exception
         # - return a Response object: stops process_exception() chain
         # - return a Request object: stops process_exception() chain
-        print('*')
+        print('*'*100)
         pass
 
 
