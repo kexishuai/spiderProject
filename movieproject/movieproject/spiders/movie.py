@@ -40,5 +40,5 @@ class MovieSpider(scrapy.Spider):
         item['publish_time'] = response.xpath('//span[contains(text(),"上映时间")]/../../td[2]')[0].xpath('string(.)').extract()[
             0]
         item['info'] = response.xpath('//div[@class="col-xs-12 movie-introduce"]/p/text()')[0].extract().strip('\u3000')
-
+        print(item)
         yield item
